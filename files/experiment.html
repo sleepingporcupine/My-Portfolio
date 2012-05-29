@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+<title>test</title>
+     
+
+    <script src="http://jqueryjs.googlecode.com/files/jquery-1.3.js" type="text/javascript"></script>
+    
+   
+	<style type="text/css">
+#infinity {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background:#00cebc;
+      border: 20px solid #00cebc;
+    -moz-border-radius: 80px 80px 0 80px;
+         border-radius: 80px 80px 0 80px;
+    -webkit-transform: rotate(80deg);
+       -moz-transform: rotate(80deg);
+        -ms-transform: rotate(80deg);
+         -o-transform: rotate(80deg);
+            transform: rotate(80deg);
+}
+#pie{
+	position:absolute;
+	left:300px;
+	top:300px;
+	width:300px;
+	height:300px;
+	margin:0;
+	padding:0;
+}
+#pie ul{
+	list-style-type: none;
+	width: 300px;
+	height: 300px;
+	padding: 0;
+ 	margin: 0;
+}
+#pie li{
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	height: 300px;
+ 	padding: 0;
+ 	margin: 0;
+ 	transform: rotateX(-60deg);
+	-webkit-transform: rotateX(-60deg); /* Safari and Chrome */
+	
+}
+#pie p {
+	width: 300px;
+	height: 300px;
+ 	padding: 0;
+ 	margin: 0;
+}
+#pie li p { -webkit-transition: all .7s ease-out;}
+
+#pie span { display: block; width: 150px; height: 300px;}
+
+#pie ul :nth-child(odd) { clip: rect(0px, 300px, 300px, 150px);}
+
+#pie ul :nth-child(even) { clip: rect(0px, 150px, 300px, 0px);}
+
+.pie_left{
+	-moz-border-radius-topleft: 150px;
+	-moz-border-radius-bottomleft: 150px;
+	-webkit-border-top-left-radius: 150px;
+	-webkit-border-bottom-left-radius: 150px;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+}
+
+.pie_right{
+	margin-left: 150px;
+	-moz-border-radius-topright: 150px;
+	-moz-border-radius-bottomright: 150px;
+	-webkit-border-top-right-radius: 150px;
+	-webkit-border-bottom-right-radius: 150px;
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	
+}
+
+#c1_l span {
+	background: #00cebc;
+	
+}
+
+#c1_r span {
+	background: #00cebc;
+}
+
+@-moz-keyframes turn {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(180deg);
+	}
+}
+@-webkit-keyframes turn {
+	0% {
+		 -webkit-transform: rotate(0deg);
+	}
+	100% {
+		 -webkit-transform: rotate(180deg); 
+	}
+}
+@-o-keyframes turn {
+	0% {
+		 -o-transform: rotate(0deg);
+	}
+	100% {
+		 -o-transform: rotate(180deg);
+	}
+}
+@keyframes turn {
+	0% {
+		 transform: rotate(0deg);
+	}
+	100% {
+		 transform: rotate(180deg);
+	}
+}
+
+/*Pie chart data (degree value) */
+#pie ul :nth-child(1) p{ 
+ 
+	-webkit-animation: turn 1s ease-out 3s 1 forwards;
+    -moz-animation: turn 1s ease-out 3s 1 forwards;
+    -o-animation: turn 1s ease-out 3s 1 forwards;
+    animation: turn 1s ease-out 3s 1 forwards;
+}
+#pie ul :nth-child(2) p{
+	-webkit-animation: turn 1s ease-in 2s 1 forwards;
+    -moz-animation: turn 1s ease-in 2s 1 forwards;
+    -o-animation: turn 1s ease-out 2s 1 forwards;
+    animation: turn 1s ease-in 2s 1 forwards;
+}
+	</style>
+</head>
+<body>
+<div id="infinity"></div>
+<div id="pie">
+					<ul>
+						<li id="c1_r"><p><span class="pie_left"></span></p></li> 	
+						<li id="c1_l"><p><span class="pie_right"></span></p></li>
+						
+					</ul>
+				</div>
+
+</body>
+</html>

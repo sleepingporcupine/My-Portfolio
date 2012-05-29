@@ -1,0 +1,541 @@
+/*************************************
+  Hello, this is my css, mindfudge.
+*************************************/
+html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
+/*************************************
+Main
+*************************************/
+@font-face {
+    font-family: "Ostrich Sans";
+    src: url('ostrich-black.ttf');
+}
+
+body {
+background: #fff;
+height : 100%;
+overflow:hidden;
+font-size : 20px;
+padding:0;
+margin:0;
+min-width:2000px;
+color:#ff0000;
+}
+
+a{
+border:none;
+text-decoration:none;
+color:#1e1e1e;
+}
+a:hover{
+
+}
+a img {
+border : none;
+text-decoration : none;
+}
+a.dotted.blue:hover{
+border-bottom:1px dotted #00cebc;
+}
+a.dotted:hover{
+border-bottom:1px dotted #1e1e1e;
+}
+/*************************************
+  Classes
+*************************************/
+.helvetica{
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.ostrich{
+font-family: 'Ostrich Sans', sans-serif;
+}
+.grey{color:#1e1e1e;}
+.blue{color:#00cebc;}
+.white{color:#ffffff;}
+
+
+.center-x{margin-left:-400px;}
+.center-y{top:50%;margin-top:-200px;}
+.content{width:800px;height:400px;}
+
+.small{
+padding: 0 0 0 0;
+margin-top: 0px;
+font-weight: 500;
+font-size:14px;
+line-height:16px;
+}
+
+p {
+font-size:30px;
+line-height:30px;
+padding:5px;
+}
+h1,h2,h3,h4{
+margin-top:0;
+}
+h1 {
+font-size:150px;
+line-height:150px;
+text-align:center;
+}
+h2 {
+font-size:60px;
+line-height:60px;
+text-align:center;
+}
+h3 {
+text-align:center;
+font-size:30px;
+line-height:30px;
+margin-top:10px;
+}
+h4 {
+font-size:30px;
+line-height:30px;
+margin-top:0px;
+}
+.link{position:relative;top:4px;}
+/*************************************
+  Navigation
+*************************************/
+#title{
+position:absolute;
+top:20px;
+left:150%;
+width:800px;
+height:auto;
+z-index:999;
+}
+#nav, #logo, #logo2 {
+width:132px;
+height:140px;
+z-index:9999;
+overflow:hidden;
+}
+#nav { 
+position:fixed;
+left:20px;
+top:20px;
+
+}
+#logo {
+position:absolute;
+left:0px;
+top:0px;
+background-position: 0 -140px;
+background-repeat:no-repeat;
+background-image:url('images/logo_web.png');
+z-index:100;
+opacity: 0;
+}
+#logo2 {
+position:absolute;
+left:0px;
+top:0px;
+background-position: 0 0;
+background-repeat:no-repeat;
+background-image:url('images/logo_web.png');
+z-index:101;
+}
+ul.links {
+padding: 0px;
+margin: 145px 0 0 5px;
+
+top:145px;
+left:0;
+width:132px;
+list-style-type:none;
+}
+ul.links li a {
+text-decoration:none;
+font-size:28px;
+line-height:28px;
+}
+ul.links li a:link, ul.links li a:visited {
+color:#00cebc;
+
+}
+ul.links li a:hover {
+color:#1e1e1e;
+}
+
+/*************************************
+ Controls '!' Section
+*************************************/
+#controls {
+position:fixed;
+width:300px;
+height:230px;
+top:-230px;
+right:20px;
+background:#00cebc;
+-webkit-border-bottom-right-radius: 25px;
+-webkit-border-bottom-left-radius: 25px;
+-moz-border-radius-bottomright: 25px;
+-moz-border-radius-bottomleft: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+z-index:9998;
+cursor:pointer;
+}
+#controls h1{
+position:absolute;
+top:-10px;
+width:100%;
+}
+
+#controls p{
+position:absolute;
+top:40px;
+padding: 0 0 0 5px;
+text-align:left;
+}
+#controlToggle{
+position:fixed;
+width:50px;
+height:50px;
+top:0px;
+right:20px;
+-webkit-border-radius: 25px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 25px;
+-moz-border-radius-topleft: 0;
+border-radius: 25px;
+border-top-left-radius: 0;
+background:#00cebc;
+overflow:hidden;
+cursor:pointer;
+z-index:9999;
+}
+#controlToggle span{
+text-align:center;
+padding:23px;
+padding-top:10px;
+position:absolute;
+line-height:40px;
+font-size:40px;
+}
+
+/*************************************
+  THE INTRO! mindblowing.
+*************************************/
+
+#introBox {
+position:absolute;
+left:150%;
+background: url('images/backgrounds/intro_bg.png') no-repeat;
+}
+ 
+ #introBox .text{
+position:relative;
+top:40px;
+left:400px;
+width:380px;
+height:250px;
+}
+#hire{
+position:absolute;
+height:95px;
+width:95px;
+right:15px;
+top:190px;
+z-index:1001;
+}
+#planner{
+position:absolute;
+height:145px;
+width:145px;
+right:40px;
+top:220px;
+z-index:1000;
+}
+/*************************************
+  < previously i showed you next >
+*************************************/
+a.next,a.prev{
+-webkit-transition: all 100ms ease-out 0ms;
+    -moz-transition: all 180ms ease-out 0ms;
+	-o-transition: all 100ms ease-out 0ms;
+position:absolute;
+height:80px;
+width:100px;
+background-repeat:no-repeat;
+}
+a.next{
+background-image:url('images/nav/next.png');
+background-position:0 0;
+}
+a.prev{
+background-image:url('images/nav/prev.png');
+background-position:20px 0;
+}
+a.next.about, a.prev.about, .navText {
+position:absolute;
+top:420px;
+}
+a.next.about{
+left:700px;
+}
+a.prev.about{
+left:0px;
+} 
+a.prev.work,a.next.work{
+-moz-transform: rotate(45deg);  
+	-o-transform: rotate(45deg); 
+	-webkit-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+	transform: rotate(45deg);
+}
+a.next.work{
+margin:65px 55px; 
+
+}
+
+a.prev.work{
+margin:35px 25px;
+}
+a.prev.contact{
+position:absolute;
+top:50%;
+margin-top:-50px;
+left:50%;
+margin-left:-440px;
+}
+a.next.contact{
+position:absolute;
+top:50%;
+margin-top:-50px;
+right:50%;
+margin-right:-440px;
+}
+
+a.prev:hover{
+background-position:0px 0;
+}
+a.next:hover{
+background-position:20px 0;
+}
+.navText{
+top:438px;
+width:600px;
+left:100px;
+}
+
+/*************************************
+  My work...
+*************************************/
+
+#project{
+position:absolute;
+left:300%;
+width:100%;
+height:100%;
+top:0;
+}
+
+.readmore{
+width:30px;
+height:30px;
+background:#00cebc;
+position:absolute;
+bottom:50px;
+left:50px;
+	-moz-transform: rotate(-45deg);  
+	-o-transform: rotate(-45deg); 
+	-webkit-transform: rotate(-45deg); 
+	-ms-transform: rotate(-45deg); 
+	transform: rotate(-45deg);
+cursor:pointer;
+}
+.readmore h4{
+	-moz-transform: rotate(45deg);  
+	-o-transform: rotate(45deg); 
+	-webkit-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+	transform: rotate(45deg);
+	margin-left:7px;
+	margin-top:7px;
+}
+/*************************************
+  Contact, you should. go on, do it.
+*************************************/
+
+#contactBox{
+position:absolute;
+left:500%;
+width:100%;
+}
+#contactBox #Me, #contactBox #You {
+position:absolute;
+top:-100px;
+width:260px;
+height:580px;
+padding:10px;
+border: 1px solid #00cebc;
+display:inline-block;
+}
+#contactBox #Me *, #contactBox #You *{margin-bottom:5px;}
+#contactBox #Me{left:50%;margin-left:-340px;}
+#contactBox #You{right:50%;margin-right:-340px;}
+#contactBox #Me .photo, #contactBox #You .photo{
+position:relative;
+top:-5px;
+left:45px;
+width:180px;
+height:180px;
+background:url('http://placehold.it/180/00cebc/fff/&text=Me');
+}
+#contactBox #You .photo{background:url('http://placehold.it/180/00cebc/fff/&text=You');}
+#contactBox #Me span.label, #contactBox #You .label{display:inline;}
+#contactBox #Me span.value, #contactBox #You .value{display:inline;font-weight:bold;}
+#contactBox #Me span.message, #contactBox #You .message{display:block;font-weight:bold;}
+#contactBox #You .message{resize:none;}
+#contactBox #Me a.download, #contactBox #You .send{
+background:#00cebc;
+position:absolute;
+bottom:2px;
+left:8px;
+display:block;
+width:260px;
+height:30px;
+text-align:center;
+font-size:24px;
+line-height:28px;
+-webkit-box-shadow:
+1px 0px 1px #ddd, 0px 1px 1px #efefef,
+2px 1px 1px #ddd, 1px 2px 1px #efefef,
+3px 2px 1px #ddd, 2px 3px 1px #efefef,
+4px 3px 1px #ddd;
+-moz-box-shadow:
+1px 0px 1px #ddd, 0px 1px 1px #efefef,
+2px 1px 1px #ddd, 1px 2px 1px #efefef,
+3px 2px 1px #ddd, 2px 3px 1px #efefef,
+4px 3px 1px #ddd;
+box-shadow:
+1px 0px 1px #ddd, 0px 1px 1px #efefef,
+2px 1px 1px #ddd, 1px 2px 1px #efefef,
+3px 2px 1px #ddd, 2px 3px 1px #efefef,
+4px 3px 1px #ddd;
+}
+#contactBox #Me a.download:hover, #contactBox #You .send:hover{
+bottom:0;
+left:10px;
+-webkit-box-shadow:
+1px 0px 1px #ccc, 0px 1px 1px #ddd,
+2px 1px 1px #ccc;
+-moz-box-shadow:
+1px 0px 1px #ccc, 0px 1px 1px #ddd,
+2px 1px 1px #ccc;
+box-shadow:
+1px 0px 1px #ccc, 0px 1px 1px #ddd,
+2px 1px 1px #ccc;
+}
+textarea{
+width:260px;height:174px;border:1px solid #efefef;
+}
+input{width:210px;border:1px solid #efefef;}
+input[name="name"]{text-transform:capitalize;}
+input[type=submit]{cursor:pointer;border:none;}
+input:focus{border:1px solid #00cebc;}
+textarea:focus{border:1px solid #00cebc;}
+
+#theEnd{
+position:absolute;
+left:700%;
+top:0;
+height:1px;
+width:1px;
+z-index:-1;
+
+}
+/*************************************
+Resize
+*************************************/
+#resize{
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+display:none;
+top:0;
+background:#00cebc;
+
+z-index:10001;
+}
+#resize p, #resize h1 {
+text-align:center;
+
+}
+#resize h1 {
+font-size:80px;
+}
+#resize p{
+font-size:120%;
+}
+/*************************************
+Form
+*************************************/
+
+input::-webkit-input-placeholder, input::-moz-placeholder {
+color:#cccccc;
+}
+textarea::-webkit-input-placeholder,textarea::-moz-placeholder {
+color:#cccccc;
+}
+
+.error {
+position:relative;
+  color:#af1010;
+ left:0px;
+}
+
+/* spam_trap: This input is hidden. This is here to trick the spam bots*/
+.spmhidip
+{
+   display:none;
+   width:10px;
+   height:3px;
+}
+#fg_crdiv
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.3em;
+   opacity: 0.2;
+   -moz-opacity: 0.2;
+    
+}
+#fg_crdiv p
+{
+    display:none;
+}
+/*************************************
+Footer
+************************************/
+#footer{
+position:fixed;
+bottom:5px;
+right:5px;
+height:16px;
+width:500px;
+}
+#footer>div{margin-top:-5px;}
+/*************************************
+Selection State
+************************************/
+::-moz-selection {
+       background-color: white;
+       color: #00cebc;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: white;
+       color: #00cebc;
+}
+::-webkit-input-selection {
+       background-color: white;
+       color: #00cebc;
+}
+/*************************************
+  The End, now beam me up!
+*************************************/

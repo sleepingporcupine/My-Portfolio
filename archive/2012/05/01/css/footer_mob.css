@@ -1,0 +1,350 @@
+/*************************************
+  Footer
+*************************************/
+footer[name="big"] {
+display: none;
+}
+footer[name="small"] {
+	
+	left: 0px;
+	
+	bottom: 0px;
+	
+	max-width: 100%;
+	
+	min-width: 100%;
+	
+	width:100%;
+	height:60px;
+	background:#00cebc;
+	position: fixed;
+	z-index:9999;
+	display: block;
+}
+
+	footer .tab {
+		position:absolute;
+		top:-180px;
+		background:url('images/tabs/tab_left.png') no-repeat left;
+		height:180px;
+		width:220px;
+		cursor:pointer;
+		z-index:-1;
+		display:none;
+	}
+	
+		footer .tab.left {
+			left:0;
+		}
+		
+		footer .tab.right {
+			right:0;
+			background:url('images/tabs/tab_right.png') no-repeat right;
+		}
+		
+		footer .tab .icon{
+			position:absolute;
+			height:80px;
+			width:80px;
+			top:85px;
+			display:block;
+		}
+		
+			footer .tab .icon.left {
+				left:24px;
+			}
+			
+			footer .tab .icon.right {
+				right:24px;
+			}
+			
+	footer .title {
+		position:absolute;
+		top:-180px;
+		width:800px;
+		height:auto;
+		left:50%;
+		margin-left:-400px;
+		z-index:-2;
+		display:none;
+	}
+	
+	footer section {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:400px;
+		display:none;
+		background:#00cebc;
+	}
+	/*Contact*/
+		footer section.contact #Me, footer section.contact #You {
+			position:absolute;
+			top:0px;
+			width:400px;
+			height:340px;
+			padding:10px;
+			display:inline-block;
+			left:50%;
+			margin-left:-440px;
+		}
+		
+		footer section.contact #You {margin-left:40px;}
+		footer section.contact #You *{margin-bottom:10px;}
+		
+			
+
+				footer section.contact #You .label{
+					display:inline;
+					width:80px;
+					overflow:hidden;
+					
+				}
+				
+				footer section.contact #You .value{
+					display:inline;
+					font-weight:bold;
+					
+				}
+				
+			footer section.contact #You .message{
+				width:390px;
+				display:block;
+				font-weight:bold;
+				resize:none;
+				height:110px;
+				border:1px solid #ffffff;
+				padding:4px;
+				background:none;
+			}
+			
+			
+			footer section.contact #You .send:hover{bottom:6px;}
+			input{width:308px;border-bottom:1px solid #ffffff;background:none;}
+			input[name="name"]{text-transform:capitalize;}
+			input[type=submit]{cursor:pointer;border:none;}
+			input:focus{border-bottom:1px solid #ffffff;}
+			textarea:focus{border:1px solid #ffffff;}
+			
+			
+			
+				footer section.contact #Me .me{
+					top:40px;
+					left:0;
+					display:inline-block;
+					position:relative;
+					height:80px;
+					width:80px;
+					background:url('images/me.png') no-repeat;
+					-webkit-border-radius: 80px;
+					-moz-border-radius: 80px;
+					border-radius: 80px;
+					
+				}
+				
+
+			footer section.contact #Me #titleBlock {
+				position:relative;
+				float:right;
+				left:0;
+				top:44px;
+				width:300px;
+				height:80px;
+				overflow:hidden;
+			}
+				footer section.contact #Me #titleBlock h2{
+					line-height:47px;
+					font-size:47px;
+					margin-bottom:5px;
+					text-align:right;
+					text-wrap:no-wrap;
+				}
+				footer section.contact #Me #titleBlock h4{
+					line-height:22px;
+					font-size:22px;
+					text-align:right;
+				}
+				footer section.contact #Me #social{
+					position:relative;
+					top:70px;
+					left:0;
+					width:400px;
+					height:60px;
+					margin-bottom:20px;
+					overflow:visible;
+				}
+				
+				footer section.contact #Me #social a.tw, footer section.contact #Me #social a.fb-like{
+					width:150px;
+					height:60px;
+					background: #ffffff;	
+					display:inline-block;
+					list-style-type: none;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+					-webkit-transition: all .2s ease-out;
+					-moz-transition: all .2s ease-out;
+					-o-transition: all .2s ease-out;
+					-ms-transition: all .2s ease-out;
+					transition: all .2s ease-out;
+					cursor:pointer;
+					overflow:hidden;
+					opacity:1;
+					border:solid 5px rgba(30,  30,  30,  0.3);
+					position:absolute;
+					top:0px;
+					
+					
+				}
+				footer section.contact #Me #social a.fb-like{
+					top:0px;
+					right:0px;
+				}
+				footer section.contact #Me #social a.tw:hover, footer section.contact #Me #social a.fb-like:hover{
+					border:solid 5px rgba(30,  30,  30,  0.8);
+				}
+				
+				
+				footer section.contact #Me #vcard, footer section.contact #You .send{
+					position:absolute;
+					bottom:20px;
+					left:10px;
+					width:400px;
+					height:80px;
+					display:block;
+					background:url('images/vcard.png');
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+				}
+				footer section.contact #You .send{
+					bottom:10px;	
+					background:url('images/send.png') no-repeat;
+				}
+				footer section.contact #Me #vcard:hover{
+					bottom:16px;
+				}
+.ui-tt {
+  cursor:pointer;
+  display:none;
+  padding:7px 10px 0 10px;
+  position:relative;
+  top:0px;
+  left:50%;
+  margin-left:-75px;
+  width:120px;
+  text-align:center;
+  background-color:#ffffff;
+  font-size:24px;
+  line-height:24px;
+  opacity:0;
+  z-index:2;
+}
+.ui-tt:after {
+  content:"\25B8";
+  display:block;
+  font-size:2em;
+  height:0;
+  line-height:0;
+  position:absolute;
+  color:#ffffff;
+  bottom:0;
+  left:-4px;
+  text-align:center;
+  -o-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -khtml-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  width:100%;
+  z-index:1;
+}
+/*About*/
+		footer section.about nav ul{
+			width:480px;
+			height:80px;
+			position:absolute;
+			left:50%;
+			margin-left:-220px;
+			top:10px;
+			background:none;
+		}
+		
+			footer section.about nav ul li{display:inline;}
+				footer section.about nav ul a li{
+					width:200px;
+					margin-right:40px;
+					float:left;
+					height:80px;
+					background:url('images/about_nav.png') no-repeat;
+					-webkit-transition: all .3s ease-out;
+					-moz-transition: all .3s ease-out;
+					-o-transition: all 0.3s ease-out;
+					-ms-transition: all .3s ease-out;
+					transition: all .3s ease-out;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+				}
+				
+					footer section.about nav ul a li.a{background-position:0 -80px;}
+					footer section.about nav ul a li.b{background-position:0 -240px;}
+					
+					footer section.about nav ul a:hover li.a, footer section.about nav ul a li.active.a{
+						background-position:0 0;
+					}
+					
+					footer section.about nav ul a:hover li.b, footer section.about nav ul a li.active.b{
+						background-position:0 -160px;
+					}
+					
+						footer section.about .content{
+							height:200px;
+							position:absolute;
+							top:100px;
+							left:50%;
+							display:inline-block;
+							margin-right:50%;
+						}
+							footer section.about .content.about{
+								width:440px;
+								margin-left:-220px;
+							}
+								footer section.about .content.about ul{
+									width:100%;
+									height:100%;
+								}
+									footer section.about .content.about ul li{
+										width:440px;
+										height:200px;
+										background:#ffffff;
+										overflow:hidden;
+										float:left;
+										display:inline;
+										-webkit-border-radius: 3px;
+										-moz-border-radius: 3px;
+										border-radius: 3px;
+									}
+									footer section.about .content.about ul li:first-child{
+										margin-bottom:10px;
+									}
+									footer section.about .content.about ul li:last-child{
+										height:80px;
+									}
+									footer section.about .content.about ul li p{
+										padding:5px;
+									}
+									footer section.about .content.about ul li a h2{
+										position:relative;
+										padding:25px 0;
+										-webkit-transition: all .5s ease-out;
+										-moz-transition: all .5s ease-out;
+										-o-transition: all .5s ease-out;
+										-ms-transition: all .5s ease-out;
+										transition: all .5s ease-out;
+									}
+								
+									footer section.about .content.about ul li a:hover h2{
+										top:-90px;
+									}
